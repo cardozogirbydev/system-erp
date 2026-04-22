@@ -1,0 +1,34 @@
+## Backend
+# Build results
+backend/**/[Dd]ebug/
+backend/**/[Dd]ebugPublic/
+backend/**/[Rr]elease/
+backend/**/[Rr]eleases/
+backend/**/x64/
+backend/**/x86/
+backend/**/[Ww][Ii][Nn]32/
+backend/**/[Aa][Rr][Mm]/
+backend/**/[Aa][Rr][Mm]64/
+backend/**/bld/
+backend/**/[Bb]in/
+backend/**/[Oo]bj/
+backend/**/[Ll]og/
+backend/**/[Ll]ogs/
+
+# .NET
+backend/**/project.lock.json
+backend/**/project.fragment.lock.json
+backend/**/artifacts/
+
+# MSBuild Binary and Structured Log
+backend/**/*.binlog
+
+# Visual Studio cache/options directory
+backend/**/.vs/
+
+# User-specific files
+backend/**/*.rsuser
+backend/**/*.suo
+backend/**/*.user
+backend/**/*.userosscache
+backend/**/*.sln.docstates
