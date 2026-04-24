@@ -11,7 +11,7 @@ namespace Entities.Inventory
         public virtual UnitOfMeasure UnitOfMeasure { get; set; } = new UnitOfMeasure();
 
         public string PresentationSKU { get; set; } = string.Empty;
-        public string? Barcode { get; set; }
+        public string Barcode { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public decimal ConversionFactor { get; set; }
         public bool IsBaseUnit { get; set; }
