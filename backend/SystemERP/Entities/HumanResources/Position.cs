@@ -10,6 +10,6 @@ namespace Entities.HumanResources
         public int DepartmentId { get; set; }
         public virtual Department Department { get; set; } = new Department();
 
-        public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
+        public virtual ICollection<EmployeePositionHistory> EmployeePositionHistory { get; set; } = new List<EmployeePositionHistory>();
     }
 }

@@ -1,4 +1,6 @@
 ﻿using Entities.Common;
+using Entities.Purchases;
+using Entities.Sales;
 
 namespace Entities.Inventory
 {
@@ -15,5 +17,9 @@ namespace Entities.Inventory
         public decimal Price { get; set; }
         public decimal ConversionFactor { get; set; }
         public bool IsBaseUnit { get; set; }
+
+        public virtual ICollection<InventoryMovement> InventoryMovements { get; set; } = new List<InventoryMovement>();
+        public virtual ICollection<SaleDetail> SaleDetails { get; set; } = new List<SaleDetail>();
+        public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; } = new List<PurchaseDetail>();
     }
 }

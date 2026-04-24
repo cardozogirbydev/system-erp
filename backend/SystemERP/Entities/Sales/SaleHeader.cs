@@ -21,7 +21,7 @@ namespace Entities.Sales
         public int PaymentFormId { get; set; }
         public virtual PaymentForm PaymentForm { get; set; } = new PaymentForm();
 
-        public virtual ICollection<SaleDetail> SaleDetail { get; set; } = new List<SaleDetail>();
-        public virtual ICollection<SalePaymentDetail> SalePaymentDetail { get; set; } = new List<SalePaymentDetail>();
+        public virtual ICollection<SaleDetail> SaleDetails { get; set; } = new List<SaleDetail>();
+        public virtual ICollection<SalePaymentDetail> SalePaymentDetails { get; set; } = new List<SalePaymentDetail>();
     }
 }

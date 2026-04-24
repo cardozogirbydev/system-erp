@@ -3,7 +3,7 @@ using Entities.Security;
 
 namespace Entities.HumanResources
 {
-    public class Employee : BaseEntity
+    public class Employee:BaseEntity
     {
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
@@ -14,7 +14,6 @@ namespace Entities.HumanResources
         public bool IsActive { get; set; } = true;
 
         public virtual ICollection<User> Users { get; set; } = new List<User>();
-        
-        public virtual ICollection<EmployeePositionHistory> EmployeePositions { get; set; } = new List<EmployeePositionHistory>();
+        public virtual ICollection<EmployeePositionHistory> EmployeePositionHistory { get; set; } = new List<EmployeePositionHistory>();
     }
 }

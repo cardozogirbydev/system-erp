@@ -8,5 +8,6 @@ namespace Entities.Inventory
         public string Location { get; set; } = string.Empty;
 
         public virtual ICollection<ProductStock> ProductStocks { get; set; } = new List<ProductStock>();
+        public virtual ICollection<InventoryMovement> InventoryMovements { get; set; } = new List<InventoryMovement>();
     }
 }
