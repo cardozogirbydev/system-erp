@@ -1,4 +1,5 @@
 ﻿using Entities.Common;
+using Entities.Purchases;
 using Entities.Sales;
 
 namespace Entities.Finances
